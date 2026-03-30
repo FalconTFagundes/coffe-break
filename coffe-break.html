@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Café · Diário de Consumo</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="sweetalert2.min.css"> -->
 <style>
   :root {
     --bg: #0f0c09;
@@ -707,12 +708,14 @@
 <div id="app-screen" class="screen">
   <header class="app-header">
     <div class="header-brand">☕ <span>Coffe Break</span></div>
+<!--     <button onclick="testeAlert()" id="testeAlert">Testar</button> -->
     <div class="header-user">
       <span id="header-username"></span>
       <div class="user-avatar" id="header-avatar">?</div>
       <button class="btn btn-ghost btn-sm" onclick="doLogout()">Sair</button>
     </div>
   </header>
+
 
   <nav class="app-nav">
     <button class="nav-tab active" onclick="switchTab('dashboard', this)">Resumo</button>
@@ -893,7 +896,19 @@
   </div>
 </div>
 
+<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+
 <script>
+
+/* 
+function testeAlert(){
+  Swal.fire({
+  title: "Good job!",
+  text: "You clicked the button!",
+  icon: "success"
+});
+} */
+
 // ============================================================
 //  STATE & STORAGE
 // ============================================================
